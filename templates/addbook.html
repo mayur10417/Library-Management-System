@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <style>
+        *{ margin: 5px; padding: 0px; }
+        body{background-color: wheat;}
+        a { text-decoration: none; margin: 20px; border: 1px solid black; background-color:rgb(44, 44, 92); color: aliceblue; padding: 10px; font-size: 20px;}
+        .login{margin-top: 5px; height: 30px; width: 260px;}
+        #log{height: 30px;width: 80px; text-align: center;line-height: 15px;margin-top: 10px;margin-left: 90px; background-color: rgb(239, 106, 106);color: aliceblue; border-color:rgb(148, 65, 65) ;}
+        div{margin-left: 600px; margin-top: 105px;border: 5px solid rgb(147, 12, 12); padding: 5px; width: 280px;}
+        p{background-color: rgb(147, 12, 12); padding: 15px;color: aliceblue;}
+    </style>
+</head>
+<body>
+    <a href="/">Home Page</a>
+    <form action="" method="post">
+        {% csrf_token %}
+    <div>
+        <p>Add a Book</p>
+        <input type="text" name="bname" class="login" placeholder="Book Name"/><br>
+        <input type="text" name="author" class="login" placeholder="Author Name"/><br>
+        <input type="text" name="category" class="login" placeholder="Category"/><br>
+        <input type="submit" value="Add Book" id="log"/>
+    </div>
+    </form>
+</body>
+</html>
